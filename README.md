@@ -1,3 +1,3 @@
 # basic-programs
 
-This repo contains all the general purpose programs i am working on.
+This repo contains all the general prectice programs I have created.
