@@ -5,21 +5,21 @@ class Student
 {
 	int rollNo;
 	String Name;
-	void getdata(int a, String name)
+	Student(int a, String name)
 	{
 		this.rollNo = a;
 		this.Name = name;
 		System.out.println("Student name" + Name);
 		System.out.println("Roll Number" + rollNo);
-
 	}
 }
 
 class Test extends Student
 {
 	float term1,term2;
-	void testmarks(float t1,float t2)
+	Test(int a, String name,float t1,float t2)
 	{
+		super(a,name);
 		this.term1 = t1;
 		this.term2 = t2;
 		System.out.println("Term 1 marks: " + term1);
@@ -32,12 +32,17 @@ interface Sports
 	public void Sportname(String name);
 }
 
-class FinalStudent extends Student implements Sports
+class FinalStudent extends Test implements Sports
 {
 	public void Sportname(String name)
 	{
 		System.out.println(name + " plays FootBall ");
 	}
+
+	FinalStudent(int a, String name,float t1,float t2){
+		super(a,name,t1,t2);
+	}
+
 	public static void main(String args[])
 	{
 		int a;
@@ -47,17 +52,17 @@ class FinalStudent extends Student implements Sports
 
 		System.out.println("Enter student name: ");
 		Studentname = sc.next();
+		
 		System.out.println("Enter student Rollno: ");
 		a = sc.nextInt();
+
 		System.out.println("Enter Term 1 Marks: ");
 		marks1 = sc.nextFloat();
+
 		System.out.println("Enter Term 2 Marks: ");
 		marks2 = sc.nextFloat();
-		Student s = new Student();
-		s.getdata(a,Studentname);
-		Test m = new Test();
-		m.testmarks(marks1,marks2);
-		FinalStudent fs = new FinalStudent();
+
+		FinalStudent fs = new FinalStudent(a,Studentname,marks1,marks2);
 		fs.Sportname(Studentname);
 	}	
 

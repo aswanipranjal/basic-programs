@@ -8,7 +8,7 @@ public class AppletHello extends Applet{
 }
 /*
 <html>
-<applet code="AppletHello.java" width="100" height="30">
+<applet code="AppletHello.java" width="1000" height="30">
 </applet>
 </html>
 */
