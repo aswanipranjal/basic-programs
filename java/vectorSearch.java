@@ -36,7 +36,7 @@ class vectorSearch
 		}
 		System.out.println("Enter the name you want to remove: ");
 		s = sc.next();
-		System.out.println("Removed: " + student.remove(s));
+		System.out.println("Removed: " + s +" "+ student.remove(s));
 		System.out.println(student);
 	}
 }

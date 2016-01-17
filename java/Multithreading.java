@@ -9,11 +9,11 @@ class A extends Thread
 		for(i=0;i<6;i++)
 		{
 			System.out.println("Inside A: "+i+"\n");
-			try {
-		    Thread.sleep(1000);                 //1000 milliseconds is one second.
-		} catch(InterruptedException ex) {
-		    Thread.currentThread().interrupt();
-		}
+			try 
+			{
+		    	sleep(1000);                 //1000 milliseconds is one second.
+			} 
+			catch(InterruptedException ex){}
 		}
 		System.out.println("Exiting A");
 	}
@@ -27,6 +27,7 @@ class B extends Thread
 		System.out.println("Starting B");
 		for(i=0;i<4;i++)
 		{
+			if(1==3) stop();
 			System.out.println("Inside B: "+i+"\n");
 		}
 		System.out.println("Exiting B");

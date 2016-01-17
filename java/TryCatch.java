@@ -6,7 +6,6 @@ public class TryCatch
 	public static void main(String args[])
 	{
 		float c = 0;
-		System.out.println("Enter 2 numbers");
 		try
 		{
 			int x = Integer.parseInt(args[0]);

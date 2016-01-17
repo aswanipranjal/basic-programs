@@ -15,5 +15,6 @@ public class palindrome
 				System.out.print(a[i]);
 			}
 			System.out.print("\n");
+		System.out.println(a);
 	}
 }
