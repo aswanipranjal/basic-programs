@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	fieldset { display: block;
+     		   margin-left: 280px;
+    		   margin-right: 280px;
+		   background-color: purple;
+  		   color: white;}
+  table{bgcolor:white; border-style:none; }
+</style>
+</head>
+<body>
+
+<h1 align="center" style="color:purple">STUDENT REGISTRATION FORM</h1>
+<form>
+
+  <fieldset>
+    FIRST NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="firstname"> (max 30 characters a-z and A-Z)
+    <br><br>
+    LAST NAME&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastname">  (max 30 characters a-z and A-Z)
+    <br><br>
+    DATE OF BIRTH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select>
+  <option value="Day">Day</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+    </select>
+    <select>
+  <option value="Month">Month</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+    </select>
+    <select>
+  <option value="Year">Year</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+    </select>
+  <br><br>
+  EMAIL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email">
+  <br><br>
+  MOBILE NUMBER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="firstname">  (10 Digit Number)
+  <br><br>
+  Gender&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Male<input type="radio" name="gender" value="male"> 
+  Female<input type="radio" name="gender" value="female"> 
+  <br><br>
+  ADDRESS &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <textarea rows="4" cols="50"></textarea>
+  <br><br>
+  CITY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="CITY">  (max 30 characters a-z and A-Z)
+  <br><br>
+  PIN CODE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="PIN"> (6 digit number)
+  <br><br>
+  STATE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="STATE"> (max 30 characters a-z and A-Z)
+  <br><br>
+  COUNTRY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="COUNTRY" value="India">
+  <br><br>
+  HOBBIES&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Drawing<input type="checkbox" name="Drawing" value="Drawing">&nbsp;&nbsp;Singing<input type="checkbox" name="Singing" value="Singing">&nbsp;&nbsp;Dancing<input type="checkbox" name="Dancing" value="Dancing">&nbsp;&nbsp;Sketching<input type="checkbox" name="Sketching" value="Sketching">&nbsp;&nbsp;others<input type="checkbox" name="others" value="others">&nbsp;&nbsp;<input type="text" name="others">
+  <br><br>
+  <table>
+  <tr>
+  <td bgcolor= "purple" rowspan="6">QUALIFICATION</td>
+  <th bgcolor="purple">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sr.No</th>
+  <th bgcolor="purple">Examination</th>
+  <th bgcolor="purple">Board</th>
+  <th bgcolor="purple">Percantage</th>
+  <th bgcolor="purple">Year of Passing</th>
+  </tr>
+  <tr>
+  <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</td>
+  <td>Class X</td>
+  <td><input type = "text"></td>
+  <td><input type = "text"></td>
+  <td><input type = "text"></td>
+ 
+  </tr>
+ <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2</td>
+  <td>Class XII</td>
+  <td><input type = "text"></td>
+  <td><input type = "text"></td>
+  <td><input type = "text"></td>
+  
+  </tr>
+ <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3</td>
+  <td>Graduation</td>
+  <td><input type = "text"></td>
+  <td><input type = "text"></td>
+  <td><input type = "text"></td>
+  
+  </tr>
+ <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4</td>
+  <td>Masters</td>
+  <td><input type = "text"></td>
+  <td><input type = "text"></td>
+  <td><input type = "text"></td>
+  
+  </tr>
+  <tr>
+  <td></td>
+  <td></td>
+  <td>(10 char max)</td>
+  <td>(upto 2 decimal)</td>
+  </tr>
+  </table>
+  <br><br>
+  COURSES<br>
+  APPLIED FOR&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BCA<input type="radio" name="COURSE" value="BCA">&nbsp;&nbsp;B.Com<input type="radio" name="COURSE" value="B.Com"> &nbsp;&nbsp;B.Sc<input type="radio" name="COURSE" value="B.Sc"> &nbsp;&nbsp;B.A<input type="radio" name="COURSE" value="B.A">
+  <br><br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <button type="submit" value="Submit">Submit</button>
+  <button type="reset" value="Reset">Reset</button>
+  </fieldset>
+</body>
+</html>
